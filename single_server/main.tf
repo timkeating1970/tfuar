@@ -19,5 +19,6 @@ resource "aws_instance" "example" {
 
   tags = {
     Name = "Terraform Example"
+    Cost_Center = "Accounting"
   }
 }
