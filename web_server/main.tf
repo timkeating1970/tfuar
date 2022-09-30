@@ -14,8 +14,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "web-server" {
-  ami           = "ami-097a2df4ac947655f"
-  instance_type = "t2.micro"
+  ami                    = "ami-097a2df4ac947655f"
+  instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.instance.id]
 
   user_data = <<-EOF
@@ -27,7 +27,7 @@ resource "aws_instance" "web-server" {
   tags = {
     Name     = "Terraform Web Server"
     Function = "Marketing"
-    Owner = "Tim Keating"
+    Owner    = "Tim Keating"
   }
 }
 
