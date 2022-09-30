@@ -27,6 +27,7 @@ resource "aws_instance" "web-server" {
   tags = {
     Name     = "Terraform Web Server"
     Function = "Marketing"
+    Owner = "Tim Keating"
   }
 }
 
